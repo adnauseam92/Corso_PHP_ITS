@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-class Studente {
+class Studente implements CorsiInterface , StudenteInterface {
     public $nome;
     public $cognome;
     public $email;
@@ -33,4 +33,61 @@ class Studente {
         }
         return array_sum($this->corsi) / count($this->corsi);
     }
-}
+
+    public function getMediaCorsi(): float
+    {
+        // TODO: Implement getMediaCorsi() method.
+    }
+
+    public function getCorsi(): array
+    {
+        // TODO: Implement getCorsi() method.
+    }
+
+    public function addVoto(string $corso, int $voto): bool
+    {
+
+
+    }
+
+    public function setNome(string $nome): bool
+    {
+        // TODO: Implement setNome() method.
+    }
+
+    public function getNome(): string
+    {
+        // TODO: Implement getNome() method.
+    }
+
+    public function setCognome(string $cognome): bool
+    {
+        // TODO: Implement setCognome() method.
+    }
+
+    public function getCognome(): string
+    {
+        // TODO: Implement getCognome() method.
+    }
+
+    public function setEmail(string $email): bool
+    {
+        // TODO: Implement setEmail() method.
+    }
+
+    public function getEmail(): string
+    {
+        // TODO: Implement getEmail() method.
+    }
+
+    public function setDataDiNascita(int $giorno, int $mese, int $anno): bool
+    {
+        // TODO: Implement setDataDiNascita() method.
+    }
+
+    public function getDataDiNascita(): string
+    {
+        // TODO: Implement getDataDiNascita() method.
+    }
+
+
